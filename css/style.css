@@ -1,0 +1,69 @@
+body {
+    background-image: url(../images/P4.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: peru;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.layout {
+    width: 1000px;
+    margin: 0 auto;
+    background: #263238;
+    /*    padding: 50px;*/
+    overflow: hidden;
+    display: flex;
+}
+
+.box {
+    color: #FFFFFF;
+    width: auto;
+    font-size: 19px;
+    line-height: 200px;
+    /*    transform: translateY(50%);*/
+    text-align: center;
+    flex-grow: 1;
+    transition: .5s;
+    /*    justify-content: space-between;*/
+}
+
+.box:hover {
+    flex-grow: 4;
+    max-width: 100%;
+    font-size: 38px;
+    color: #263238;
+}
+
+.layout .box:nth-child(1) {
+    background-color: #9F64B9;
+}
+
+.layout .box:nth-child(1) {
+    background-color: #9F64B9;
+}
+
+.layout .box:nth-child(2) {
+    background-color: #92A3A7;
+}
+
+.layout .box:nth-child(3) {
+    background-color: #F05938;
+}
+
+.layout .box:nth-child(4) {
+    background-color: #217ABF;
+}
+
+.layout .box:nth-child(5) {
+    background-color: #0DAB9C;
+}
+
+.layout .box:nth-child(6) {
+    background-color: #DECB5B;
+}
+
+.layout .box:nth-child(7):hover {
+    color: #DECB5B;
+}
