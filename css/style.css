@@ -1,71 +1,99 @@
-body {
+*{  margin: 0;
+    padding : 0;
     
-    background-image: url(../images/p4.jpg);
+}
+body {
+
+/*
+    background-image: url(../images/Pattern.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
-    background-color: peru;
+*/
+
+
+    background-color: #263238;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    margin-top: 25px;
+    font-weight: 500 ;
+    font-size : 16 px;
+    line-height : 20px;
+    height: 100vh;
 }
 
-.layout {
-    width: 1000px;
-    margin: 0 auto;
-    margin-top: 50px;
-    background: #263238;
-    /*    padding: 50px;*/
-    overflow: hidden;
-    display: flex;
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ul li{
+    list-style: none;
+    position: relative;
+    height: 33.3vh;
+    width: 100vw;
 }
 
-.box {
-    color: #FFFFFF;
-    width: auto;
-    font-size: 19px;
-    line-height: 200px;
-    /*    transform: translateY(50%);*/
+#up,
+#middle,
+#bottom{
+    height: 100%;
+}
+
+/*
+#up{
+    background-color: #054F00;
+}
+#middle{
+    background-color: #B51304;
+
+}
+#bottom{
+    background-color: #054F00;
+}
+*/
+
+#up{
+    background-color: #8B0101;
+}
+#middle{
+    background-color: #054F00;
+}
+#bottom{
+    background-color: #8B0101;
+}
+
+
+ul li img{
+    position: absolute;
+    margin: 15px 0 0;
+    height: 90%;
+    left: 48%;
+    padding: 0;
+    transform: translateX(-52%);
+}
+ul li h1{
+    position: absolute;
     text-align: center;
-    flex-grow: 1;
-    transition: .5s;
-    /*    justify-content: space-between;*/
+    width: 35%;
+    margin: 3%;
+    font-size: 4em;
+    padding: 0;
+    line-height: 70px;
+    color: #FFFFFF;
+    
 }
-
-.box:hover {
-    flex-grow: 4;
-    max-width: 100%;
-    font-size: 38px;
-    color: #263238;
-}
-
-.layout .box:nth-child(1) {
-    background-color: #9F64B9;
-}
-
-.layout .box:nth-child(1) {
-    background-color: #9F64B9;
-}
-
-.layout .box:nth-child(2) {
-    background-color: #92A3A7;
-}
-
-.layout .box:nth-child(3) {
-    background-color: #F05938;
-}
-
-.layout .box:nth-child(4) {
-    background-color: #217ABF;
-}
-
-.layout .box:nth-child(5) {
-    background-color: #0DAB9C;
-}
-
-.layout .box:nth-child(6) {
-    background-color: #DECB5B;
-}
-
-.layout .box:nth-child(7):hover {
-    color: #DECB5B;
+ul li h2{
+    position: absolute;
+    text-align: center;
+    width: 35%;
+    right: 0;
+    margin: 4% 60px 0px 0px;
+    font-size: 4em;
+    padding: 0;
+    line-height: 70px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    
 }
