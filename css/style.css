@@ -71,7 +71,9 @@ ul li img{
     height: 90%;
     left: 48%;
     padding: 0;
-    transform: translateX(-52%);
+    -webkit-transform: translateX(-52%);
+        -ms-transform: translateX(-52%);
+            transform: translateX(-52%);
 }
 ul li h1{
     position: absolute;
