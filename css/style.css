@@ -2,100 +2,139 @@
     padding : 0;
 }
 body {
-    background-image: url(../images/sierra1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../images/landscape.jpg);
+   background-size:cover;
     font-family: 'Roboto', sans-serif;
     font-weight: 500 ;
     font-size : 16 px;
     line-height : 20px;
 }
 .layout {
-    display: inline-block;
-   
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.58);
+    
+}
+.loginbox{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    width: 340px;
-    height: 435px;
-    box-sizing: border-box;
-    background-color: rgba(0,0,0,.6);
-    padding: 40px;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 350px;
+    min-height: 400px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 17px
+    
 }
 
-
-.image{
-    widows: 112px;
-    height: 112px;
-    overflow: hidden;
-    position: absolute;
-   top: calc(-112px/2);
-    left: calc(50% - 50px);
+.user-icon{
+    margin: 0 auto;
+    display: block;
+    height: 102px;
+    margin-top: 2px;
+    margin-bottom: 28px;
 }
 
 h2{
-    color: #E98B47;
-    margin: 0;
-    padding-top: 45px;
-    padding-bottom: 40px;
-    text-align: center;
-    font-size: 30px;
-}
-
-.layout p{
-    color: #E98B47;
     font-weight: bold;
-    margin: 0;
-    font-size: 20px;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 30px;
     
 }
-.layout input{
+.inputbox input{
     width: 100%;
-    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1.5px solid #5D5F60;
+    outline: none;
+    height: 40px;
+    background-color: transparent;
 }
 
-.layout input[type="text"],
-.layout input[type="password"]{
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #B5C9D9;
-    height: 50px;
-    outline: none;
+.inputbox input[type="text"],
+.inputbox input[type="password"]{
+    color: #1A2227;
     font-size: 19px;
-    color:aliceblue;
+    padding-left: 23px;
     
+}
+.inputbox input[type="text"]:focus,
+.inputbox input[type="password"]:focus{
+    border-bottom: 1.5px solid #D7001A;
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+    font-family: sans-serif;
+}
+
+::-webkit-input-placeholder{
+    font-family: monospace;
+    color: #A0A0A0;
+    font-size: 18px;
+    font-weight: bold;
+/*     padding-left: 2px;*/
+}
+
+:-ms-input-placeholder{
+    font-family: monospace;
+    color: #A0A0A0;
+    font-size: 18px;
+    font-weight: bold;
+/*     padding-left: 2px;*/
 }
 
 ::placeholder{
-    color: rgba(255,255,255,.6);
-    font-size: 16px;
     font-family: monospace;
-}
-
-.layout input[type="submit"]{
-    
-    margin-top: 10px;
-    height: 40px;
-    text-align: center;
-    font-size: 22px;
-    outline: none;
-    border-radius: 20px;
-    background-color: #95D7D0;
-    border: none;
+    color: #A0A0A0;
+    font-size: 18px;
     font-weight: bold;
+/*     padding-left: 2px;*/
 }
 
-.layout input[type="submit"]:hover{
-    background-color: #F18B4A;
-    font-size: 24px;
-    transition: .1s;
+.loginbox input[type="button"]{
+
+    width: 100%;
+    height: 37px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
     cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: #D7001A;
+}
+.inputbox{
+    position: relative;
+    padding-right: 20px;
+}
+.inputbox span{
+    position: relative;
+    top: -32px;
+}
+.loginbox input[type="button"]:hover{
+    background-color: #1A2227;
+    font-size: 22px;
+    -webkit-transition:.1s;
+    -o-transition:.1s;
+    transition:.1s;
 }
 
-.layout a{
-    padding-left: 20px;
+.loginbox a{
+/*    position: absolute;*/
     text-decoration: none;
-    color: aliceblue;
-    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+/*    margin-left: 50px;*/
+    text-align: center;
+    font-size: 13px;
+    color: #263238;
+    font-weight: bold;
 }
